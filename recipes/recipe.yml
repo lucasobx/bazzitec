@@ -3,11 +3,11 @@
 # image will be published to ghcr.io/<user>/<name>
 name: bazzitec
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: Custom Bazzite image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bazzite-nvidia-open
+image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -23,14 +23,32 @@ modules:
         - atim/starship
     install:
       packages:
-        - micro
         - starship
+        - emacs
     remove:
+      auto-remove: false
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox-langpacks
+        - lutris
+        - kate
+        - kate-plugins
+        - kate-krunner-plugin
+        - kde-connect
+        - kde-connect-libs
+        - kdeconnectd
+        - waydroid
+        - waydroid-selinux
+        - krfb
+        - krfb-libs
+        - kdebugsettings
+        - khelpcenter
+        - kjournald
+        - rom-properties
+        - rom-properties-utils
+        - rom-properties-common
+        - rom-properties-thumbnailer-dbus
+        - rom-properties-kf6
 
   - type: default-flatpaks
     configurations:
