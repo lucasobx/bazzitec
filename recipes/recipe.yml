@@ -21,11 +21,15 @@ modules:
     repos:
       copr:
         - atim/starship
+        - wezfurlong/wezterm-nightly
     install:
       packages:
         - starship
-        - emacs
+        - wezterm
         - love
+        - zsh
+        - zsh-autosuggestions
+        - zsh-syntax-highlighting
 
     remove:
       auto-remove: false
@@ -51,12 +55,5 @@ modules:
         - rom-properties-common
         - rom-properties-thumbnailer-dbus
         - rom-properties-kf6
-
-  - type: default-flatpaks
-    configurations:
-      - notify: false
-        scope: system
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
