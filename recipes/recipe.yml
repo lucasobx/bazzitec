@@ -56,6 +56,6 @@ modules:
         - rom-properties-thumbnailer-dbus
         - rom-properties-kf6
         - kwrite
-        - kde-ptyxis
+        - ptyxis
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
