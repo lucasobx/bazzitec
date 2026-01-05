@@ -55,7 +55,6 @@ modules:
         - rom-properties-common
         - rom-properties-thumbnailer-dbus
         - rom-properties-kf6
-        - kwrite
         - ptyxis
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
