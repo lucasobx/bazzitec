@@ -21,16 +21,11 @@ modules:
     repos:
       copr:
         - atim/starship
-        - wezfurlong/wezterm-nightly
     install:
       packages:
         - starship
-        - wezterm-nightly
-        - love
-        - zsh
-        - zsh-autosuggestions
-        - zsh-syntax-highlighting
         - okular
+        - love
 
     remove:
       auto-remove: false
