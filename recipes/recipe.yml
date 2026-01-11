@@ -25,7 +25,7 @@ modules:
     install:
       packages:
         - starship
-        - wezterm
+        - wezterm-nightly
         - love
         - zsh
         - zsh-autosuggestions
