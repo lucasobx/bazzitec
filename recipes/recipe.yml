@@ -25,6 +25,7 @@ modules:
       packages:
         - starship
         - okular
+        - emacs
         - love
 
     remove:
