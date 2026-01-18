@@ -19,13 +19,9 @@ modules:
 
   - type: dnf
     repos:
-      copr:
-        - atim/starship
     install:
       packages:
-        - starship
         - okular
-        - emacs
         - love
 
     remove:
