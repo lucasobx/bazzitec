@@ -21,6 +21,7 @@ modules:
     install:
       packages:
         - okular
+        - emacs
         - love
 
     remove:
