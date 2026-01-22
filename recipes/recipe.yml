@@ -23,18 +23,6 @@ modules:
         - okular
         - emacs
         - love
-        - wofi
-        - hyprland
-        - hyprpaper
-        - hyprpicker
-        - hyprcursor
-        - xdg-desktop-portal-hyprland
-        - hyprland-qtutils
-        - hyprpolkitagent
-        - hyprsysteminfo
-        - hypridle
-        - hyprlock
-        - hyprshot
 
     remove:
       auto-remove: false
