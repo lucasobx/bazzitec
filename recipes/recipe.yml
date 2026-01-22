@@ -18,9 +18,6 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-      copr:
-        - solopasha/hyprland
     install:
       packages:
         - okular
@@ -32,7 +29,6 @@ modules:
         - hyprpicker
         - hyprcursor
         - xdg-desktop-portal-hyprland
-        - hyprland-qt-support
         - hyprland-qtutils
         - hyprpolkitagent
         - hyprsysteminfo
